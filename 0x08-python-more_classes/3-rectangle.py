@@ -109,12 +109,3 @@ class Rectangle:
             if (i != self.__height - 1):
                 other += "\n"
         return other
-
-    def __repr__(self):
-        """
-        Rectangle string representation method.
-        Returns:
-            A string representation of the rectangle to be able to
-            recreate a new instance by using eval().
-        """
-        return ("Rectangle({:d}, {:d})".format(self.width, self.height))

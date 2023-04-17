@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+
+"""Define a base model class."""
 import json
 import csv
 import turtle
-"""Define a base model class."""
 
 
 class Base:
@@ -95,7 +96,6 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """Write the CSV serialization of a list of objects to a file.
-
         Args:
             list_objs (list): A list of inherited Base instances.
         """
@@ -115,9 +115,7 @@ class Base:
     @classmethod
     def load_from_file_csv(cls):
         """Return a list of classes instantiated from a CSV file.
-
         Reads from `<cls.__name__>.csv`.
-
         Returns:
             If the file does not exist - an empty list.
             Otherwise - a list of instantiated classes.
